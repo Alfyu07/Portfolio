@@ -111,9 +111,17 @@ h6 {
   [data-aos-delay] {
     transition-delay: 0 !important;
   }
+}
 
+@media only screen and (max-width: 768px) {
   .portfolio-video {
-    height: 315;
+    height: 315px; /* Atur tinggi sesuai kebutuhan untuk lebar layar <= 768px */
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .portfolio-video {
+    height: 520px; /* Atur tinggi sesuai kebutuhan untuk lebar layar > 768px */
   }
 }
 
