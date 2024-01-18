@@ -145,7 +145,7 @@
     if (pageParam === "yes") {
       // Ubah teks link menjadi "Back to Portfolio"
       openAsPageLink.innerHTML =
-        '<a href="index.html" class="back-to-portfolio" >Wahyu Portfolio</a>/' +
+        '<a href="index.html" class="back-to-portfolio" >Portfolio</a>/' +
         title;
 
       // Ubah href ke index.html
