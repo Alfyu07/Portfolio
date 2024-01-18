@@ -134,6 +134,25 @@
     }
   });
 
+  document.addEventListener("DOMContentLoaded", function () {
+    var openAsPageLink = document.getElementById("openpage");
+    var title = document.title;
+    // Menggunakan URLSearchParams untuk mendapatkan nilai parameter 'page'
+    const urlParams = new URLSearchParams(window.location.search);
+    const pageParam = urlParams.get("page");
+
+    // Cek jika parameter 'page' memiliki nilai 'yes'
+    if (pageParam === "yes") {
+      // Ubah teks link menjadi "Back to Portfolio"
+      openAsPageLink.innerHTML =
+        '<a href="index.html" class="back-to-portfolio" >Wahyu Portfolio</a>/' +
+        title;
+
+      // Ubah href ke index.html
+      openAsPageLink.href = "index.html";
+    }
+  });
+
   /**
    * Preloader
    */
